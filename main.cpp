@@ -137,7 +137,7 @@ void makeSelection(int listSize,
             cout << "Item already selected" << endl;
         
         cout << "How many orders: ";
-        cin >> orders[itemNo-1]; 
+        cin >> orders[cListLength-1]; 
         //orderNum = orderNum.orders;
         cout << "Select another item Y/y (Yes), N/n (No): ";
         cin >> response;
