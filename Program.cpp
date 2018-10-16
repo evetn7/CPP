@@ -12,7 +12,7 @@ struct menuItemType
 {
     string menuItem;
     double menuPrice;
-    double orders;
+    int orders;
 };
 
 void getData(ifstream& inFile, menuItemType mList[], int listSize);
