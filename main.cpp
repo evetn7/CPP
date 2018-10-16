@@ -93,10 +93,10 @@ void printCheck(menuItemType mList[], int listSize,
     }
 
     salesTax = amountDue * .05;
-    cout << left << setw(19) << "Tax " << right << " $" 
+    cout << left << setw(4) << "|" <<setw(15) << "Tax " << right << " $" 
     << salesTax << endl;
     amountDue = amountDue + salesTax;
-    cout << left << setw(19) << "Amount Due " << right 
+    cout << left << setw(4) << "|" <<setw(15)<< "Amount Due " << right 
     << " $" << amountDue << endl;
 }
 
