@@ -6,7 +6,6 @@
 using namespace std;
 
 const int NO_OF_ITEMS = 8;
- //int quantity;
 
 struct menuItemType
 {
@@ -82,8 +81,6 @@ void printCheck(menuItemType mList[], int listSize,
     double salesTax;
     double amountDue = 0;
 
-    cout << "This is a test holder for quantity: " << orders << endl;
-    
     cout << "Welcome to Johnny's Resturant" << endl;
     for (i = 0; i < cListLength; i++)
     {
@@ -104,9 +101,7 @@ void makeSelection(int listSize,
    int cList[], int& cListLength,int orders[])
 {
     int selectionNo = 0;
-    int itemNo;
-    
-    //int i = 0; 
+    int itemNo; 
     
     char response;
 
@@ -128,8 +123,6 @@ void makeSelection(int listSize,
         cin >> itemNo;
         cout << endl;
         
-       // menuItemType quantity;
-        
       
         if (!isItemSelected(cList,cListLength,itemNo))
             cList[cListLength++] = itemNo - 1;
@@ -138,7 +131,6 @@ void makeSelection(int listSize,
         
         cout << "How many orders: ";
         cin >> orders[cListLength-1]; 
-        //orderNum = orderNum.orders;
         cout << "Select another item Y/y (Yes), N/n (No): ";
         cin >> response;
         cout << endl;
